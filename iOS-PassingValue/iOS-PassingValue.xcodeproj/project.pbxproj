@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1C4DE9722B872B100CF447B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DE9622B872B100CF447B /* AppDelegate.m */; };
+		D1C4DE9A22B872B100CF447B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DE9922B872B100CF447B /* ViewController.m */; };
+		D1C4DE9D22B872B100CF447B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C4DE9B22B872B100CF447B /* Main.storyboard */; };
+		D1C4DE9F22B872B200CF447B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C4DE9E22B872B200CF447B /* Assets.xcassets */; };
+		D1C4DEA222B872B200CF447B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C4DEA022B872B200CF447B /* LaunchScreen.storyboard */; };
+		D1C4DEA522B872B200CF447B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DEA422B872B200CF447B /* main.m */; };
+		D1C4DEAF22B872B200CF447B /* iOS_PassingValueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DEAE22B872B200CF447B /* iOS_PassingValueTests.m */; };
+		D1C4DEBA22B872B200CF447B /* iOS_PassingValueUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DEB922B872B200CF447B /* iOS_PassingValueUITests.m */; };
+		D1C4DEE622B87E9200CF447B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DEE522B87E9200CF447B /* BaseViewController.m */; };
+		D1C4DEE922B87FB000CF447B /* PropertyPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DEE822B87FB000CF447B /* PropertyPassViewController.m */; };
+		D1C4DEEC22B884B200CF447B /* UserDefaultPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DEEB22B884B200CF447B /* UserDefaultPassViewController.m */; };
+		D1C4DEEF22B88AAF00CF447B /* BlockPassValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DEEE22B88AAF00CF447B /* BlockPassValueViewController.m */; };
+		D1C4DEF222B893A900CF447B /* DelegatePassValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DEF122B893A900CF447B /* DelegatePassValueViewController.m */; };
+		D1C4DEF522B8964600CF447B /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C4DEF422B8964600CF447B /* NotificationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1C4DEAB22B872B200CF447B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1C4DE8A22B872B100CF447B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1C4DE9122B872B100CF447B;
+			remoteInfo = "iOS-PassingValue";
+		};
+		D1C4DEB622B872B200CF447B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1C4DE8A22B872B100CF447B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1C4DE9122B872B100CF447B;
+			remoteInfo = "iOS-PassingValue";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D1C4DE9222B872B100CF447B /* iOS-PassingValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-PassingValue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C4DE9522B872B100CF447B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1C4DE9622B872B100CF447B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D1C4DE9822B872B100CF447B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D1C4DE9922B872B100CF447B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D1C4DE9C22B872B100CF447B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1C4DE9E22B872B200CF447B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1C4DEA122B872B200CF447B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1C4DEA322B872B200CF447B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C4DEA422B872B200CF447B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1C4DEAA22B872B200CF447B /* iOS-PassingValueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-PassingValueTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C4DEAE22B872B200CF447B /* iOS_PassingValueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_PassingValueTests.m; sourceTree = "<group>"; };
+		D1C4DEB022B872B200CF447B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C4DEB522B872B200CF447B /* iOS-PassingValueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-PassingValueUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C4DEB922B872B200CF447B /* iOS_PassingValueUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_PassingValueUITests.m; sourceTree = "<group>"; };
+		D1C4DEBB22B872B200CF447B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C4DEE422B87E9200CF447B /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D1C4DEE522B87E9200CF447B /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D1C4DEE722B87FB000CF447B /* PropertyPassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyPassViewController.h; sourceTree = "<group>"; };
+		D1C4DEE822B87FB000CF447B /* PropertyPassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyPassViewController.m; sourceTree = "<group>"; };
+		D1C4DEEA22B884B200CF447B /* UserDefaultPassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultPassViewController.h; sourceTree = "<group>"; };
+		D1C4DEEB22B884B200CF447B /* UserDefaultPassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultPassViewController.m; sourceTree = "<group>"; };
+		D1C4DEED22B88AAF00CF447B /* BlockPassValueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockPassValueViewController.h; sourceTree = "<group>"; };
+		D1C4DEEE22B88AAF00CF447B /* BlockPassValueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockPassValueViewController.m; sourceTree = "<group>"; };
+		D1C4DEF022B893A900CF447B /* DelegatePassValueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegatePassValueViewController.h; sourceTree = "<group>"; };
+		D1C4DEF122B893A900CF447B /* DelegatePassValueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegatePassValueViewController.m; sourceTree = "<group>"; };
+		D1C4DEF322B8964600CF447B /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		D1C4DEF422B8964600CF447B /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1C4DE8F22B872B100CF447B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C4DEA722B872B200CF447B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C4DEB222B872B200CF447B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1C4DE8922B872B100CF447B = {
+			isa = PBXGroup;
+			children = (
+				D1C4DE9422B872B100CF447B /* iOS-PassingValue */,
+				D1C4DEAD22B872B200CF447B /* iOS-PassingValueTests */,
+				D1C4DEB822B872B200CF447B /* iOS-PassingValueUITests */,
+				D1C4DE9322B872B100CF447B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1C4DE9322B872B100CF447B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DE9222B872B100CF447B /* iOS-PassingValue.app */,
+				D1C4DEAA22B872B200CF447B /* iOS-PassingValueTests.xctest */,
+				D1C4DEB522B872B200CF447B /* iOS-PassingValueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1C4DE9422B872B100CF447B /* iOS-PassingValue */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DECF22B87E4400CF447B /* Classes */,
+				D1C4DE9522B872B100CF447B /* AppDelegate.h */,
+				D1C4DE9622B872B100CF447B /* AppDelegate.m */,
+				D1C4DE9822B872B100CF447B /* ViewController.h */,
+				D1C4DE9922B872B100CF447B /* ViewController.m */,
+				D1C4DE9B22B872B100CF447B /* Main.storyboard */,
+				D1C4DE9E22B872B200CF447B /* Assets.xcassets */,
+				D1C4DEA022B872B200CF447B /* LaunchScreen.storyboard */,
+				D1C4DEA322B872B200CF447B /* Info.plist */,
+				D1C4DEA422B872B200CF447B /* main.m */,
+			);
+			path = "iOS-PassingValue";
+			sourceTree = "<group>";
+		};
+		D1C4DEAD22B872B200CF447B /* iOS-PassingValueTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DEAE22B872B200CF447B /* iOS_PassingValueTests.m */,
+				D1C4DEB022B872B200CF447B /* Info.plist */,
+			);
+			path = "iOS-PassingValueTests";
+			sourceTree = "<group>";
+		};
+		D1C4DEB822B872B200CF447B /* iOS-PassingValueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DEB922B872B200CF447B /* iOS_PassingValueUITests.m */,
+				D1C4DEBB22B872B200CF447B /* Info.plist */,
+			);
+			path = "iOS-PassingValueUITests";
+			sourceTree = "<group>";
+		};
+		D1C4DECF22B87E4400CF447B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DEE422B87E9200CF447B /* BaseViewController.h */,
+				D1C4DEE522B87E9200CF447B /* BaseViewController.m */,
+				D1C4DED022B87E4400CF447B /* BlockPassPage */,
+				D1C4DED422B87E4400CF447B /* DelegatePassPage */,
+				D1C4DED822B87E4400CF447B /* GlobalPassPage */,
+				D1C4DEDC22B87E4400CF447B /* PropertyPassPage */,
+				D1C4DEE022B87E4400CF447B /* NotificationPassPage */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D1C4DED022B87E4400CF447B /* BlockPassPage */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DED122B87E4400CF447B /* Controller */,
+				D1C4DED222B87E4400CF447B /* Model */,
+				D1C4DED322B87E4400CF447B /* View */,
+			);
+			path = BlockPassPage;
+			sourceTree = "<group>";
+		};
+		D1C4DED122B87E4400CF447B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DEED22B88AAF00CF447B /* BlockPassValueViewController.h */,
+				D1C4DEEE22B88AAF00CF447B /* BlockPassValueViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1C4DED222B87E4400CF447B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1C4DED322B87E4400CF447B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1C4DED422B87E4400CF447B /* DelegatePassPage */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DED522B87E4400CF447B /* Controller */,
+				D1C4DED622B87E4400CF447B /* Model */,
+				D1C4DED722B87E4400CF447B /* View */,
+			);
+			path = DelegatePassPage;
+			sourceTree = "<group>";
+		};
+		D1C4DED522B87E4400CF447B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DEF022B893A900CF447B /* DelegatePassValueViewController.h */,
+				D1C4DEF122B893A900CF447B /* DelegatePassValueViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1C4DED622B87E4400CF447B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1C4DED722B87E4400CF447B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1C4DED822B87E4400CF447B /* GlobalPassPage */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DED922B87E4400CF447B /* Controller */,
+				D1C4DEDA22B87E4400CF447B /* Model */,
+				D1C4DEDB22B87E4400CF447B /* View */,
+			);
+			path = GlobalPassPage;
+			sourceTree = "<group>";
+		};
+		D1C4DED922B87E4400CF447B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DEEA22B884B200CF447B /* UserDefaultPassViewController.h */,
+				D1C4DEEB22B884B200CF447B /* UserDefaultPassViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1C4DEDA22B87E4400CF447B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1C4DEDB22B87E4400CF447B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1C4DEDC22B87E4400CF447B /* PropertyPassPage */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DEDD22B87E4400CF447B /* Controller */,
+				D1C4DEDE22B87E4400CF447B /* Model */,
+				D1C4DEDF22B87E4400CF447B /* View */,
+			);
+			path = PropertyPassPage;
+			sourceTree = "<group>";
+		};
+		D1C4DEDD22B87E4400CF447B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DEE722B87FB000CF447B /* PropertyPassViewController.h */,
+				D1C4DEE822B87FB000CF447B /* PropertyPassViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1C4DEDE22B87E4400CF447B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1C4DEDF22B87E4400CF447B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1C4DEE022B87E4400CF447B /* NotificationPassPage */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DEE122B87E4400CF447B /* Controller */,
+				D1C4DEE222B87E4400CF447B /* Model */,
+				D1C4DEE322B87E4400CF447B /* View */,
+			);
+			path = NotificationPassPage;
+			sourceTree = "<group>";
+		};
+		D1C4DEE122B87E4400CF447B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1C4DEF322B8964600CF447B /* NotificationViewController.h */,
+				D1C4DEF422B8964600CF447B /* NotificationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1C4DEE222B87E4400CF447B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1C4DEE322B87E4400CF447B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1C4DE9122B872B100CF447B /* iOS-PassingValue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C4DEBE22B872B200CF447B /* Build configuration list for PBXNativeTarget "iOS-PassingValue" */;
+			buildPhases = (
+				D1C4DE8E22B872B100CF447B /* Sources */,
+				D1C4DE8F22B872B100CF447B /* Frameworks */,
+				D1C4DE9022B872B100CF447B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-PassingValue";
+			productName = "iOS-PassingValue";
+			productReference = D1C4DE9222B872B100CF447B /* iOS-PassingValue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1C4DEA922B872B200CF447B /* iOS-PassingValueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C4DEC122B872B200CF447B /* Build configuration list for PBXNativeTarget "iOS-PassingValueTests" */;
+			buildPhases = (
+				D1C4DEA622B872B200CF447B /* Sources */,
+				D1C4DEA722B872B200CF447B /* Frameworks */,
+				D1C4DEA822B872B200CF447B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1C4DEAC22B872B200CF447B /* PBXTargetDependency */,
+			);
+			name = "iOS-PassingValueTests";
+			productName = "iOS-PassingValueTests";
+			productReference = D1C4DEAA22B872B200CF447B /* iOS-PassingValueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1C4DEB422B872B200CF447B /* iOS-PassingValueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C4DEC422B872B200CF447B /* Build configuration list for PBXNativeTarget "iOS-PassingValueUITests" */;
+			buildPhases = (
+				D1C4DEB122B872B200CF447B /* Sources */,
+				D1C4DEB222B872B200CF447B /* Frameworks */,
+				D1C4DEB322B872B200CF447B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1C4DEB722B872B200CF447B /* PBXTargetDependency */,
+			);
+			name = "iOS-PassingValueUITests";
+			productName = "iOS-PassingValueUITests";
+			productReference = D1C4DEB522B872B200CF447B /* iOS-PassingValueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1C4DE8A22B872B100CF447B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Margin;
+				TargetAttributes = {
+					D1C4DE9122B872B100CF447B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D1C4DEA922B872B200CF447B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D1C4DE9122B872B100CF447B;
+					};
+					D1C4DEB422B872B200CF447B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D1C4DE9122B872B100CF447B;
+					};
+				};
+			};
+			buildConfigurationList = D1C4DE8D22B872B100CF447B /* Build configuration list for PBXProject "iOS-PassingValue" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1C4DE8922B872B100CF447B;
+			productRefGroup = D1C4DE9322B872B100CF447B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1C4DE9122B872B100CF447B /* iOS-PassingValue */,
+				D1C4DEA922B872B200CF447B /* iOS-PassingValueTests */,
+				D1C4DEB422B872B200CF447B /* iOS-PassingValueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1C4DE9022B872B100CF447B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C4DEA222B872B200CF447B /* LaunchScreen.storyboard in Resources */,
+				D1C4DE9F22B872B200CF447B /* Assets.xcassets in Resources */,
+				D1C4DE9D22B872B100CF447B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C4DEA822B872B200CF447B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C4DEB322B872B200CF447B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1C4DE8E22B872B100CF447B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C4DEEC22B884B200CF447B /* UserDefaultPassViewController.m in Sources */,
+				D1C4DEEF22B88AAF00CF447B /* BlockPassValueViewController.m in Sources */,
+				D1C4DE9A22B872B100CF447B /* ViewController.m in Sources */,
+				D1C4DEE622B87E9200CF447B /* BaseViewController.m in Sources */,
+				D1C4DEA522B872B200CF447B /* main.m in Sources */,
+				D1C4DEF522B8964600CF447B /* NotificationViewController.m in Sources */,
+				D1C4DE9722B872B100CF447B /* AppDelegate.m in Sources */,
+				D1C4DEF222B893A900CF447B /* DelegatePassValueViewController.m in Sources */,
+				D1C4DEE922B87FB000CF447B /* PropertyPassViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C4DEA622B872B200CF447B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C4DEAF22B872B200CF447B /* iOS_PassingValueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C4DEB122B872B200CF447B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C4DEBA22B872B200CF447B /* iOS_PassingValueUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1C4DEAC22B872B200CF447B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1C4DE9122B872B100CF447B /* iOS-PassingValue */;
+			targetProxy = D1C4DEAB22B872B200CF447B /* PBXContainerItemProxy */;
+		};
+		D1C4DEB722B872B200CF447B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1C4DE9122B872B100CF447B /* iOS-PassingValue */;
+			targetProxy = D1C4DEB622B872B200CF447B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1C4DE9B22B872B100CF447B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1C4DE9C22B872B100CF447B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1C4DEA022B872B200CF447B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1C4DEA122B872B200CF447B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1C4DEBC22B872B200CF447B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D1C4DEBD22B872B200CF447B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1C4DEBF22B872B200CF447B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-PassingValue/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-KnowledgeFragments.iOS-PassingValue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1C4DEC022B872B200CF447B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-PassingValue/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-KnowledgeFragments.iOS-PassingValue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D1C4DEC222B872B200CF447B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-PassingValueTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-KnowledgeFragments.iOS-PassingValueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-PassingValue.app/iOS-PassingValue";
+			};
+			name = Debug;
+		};
+		D1C4DEC322B872B200CF447B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-PassingValueTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-KnowledgeFragments.iOS-PassingValueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-PassingValue.app/iOS-PassingValue";
+			};
+			name = Release;
+		};
+		D1C4DEC522B872B200CF447B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-PassingValueUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-KnowledgeFragments.iOS-PassingValueUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-PassingValue";
+			};
+			name = Debug;
+		};
+		D1C4DEC622B872B200CF447B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-PassingValueUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-KnowledgeFragments.iOS-PassingValueUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-PassingValue";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1C4DE8D22B872B100CF447B /* Build configuration list for PBXProject "iOS-PassingValue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C4DEBC22B872B200CF447B /* Debug */,
+				D1C4DEBD22B872B200CF447B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1C4DEBE22B872B200CF447B /* Build configuration list for PBXNativeTarget "iOS-PassingValue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C4DEBF22B872B200CF447B /* Debug */,
+				D1C4DEC022B872B200CF447B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1C4DEC122B872B200CF447B /* Build configuration list for PBXNativeTarget "iOS-PassingValueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C4DEC222B872B200CF447B /* Debug */,
+				D1C4DEC322B872B200CF447B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1C4DEC422B872B200CF447B /* Build configuration list for PBXNativeTarget "iOS-PassingValueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C4DEC522B872B200CF447B /* Debug */,
+				D1C4DEC622B872B200CF447B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1C4DE8A22B872B100CF447B /* Project object */;
+}
